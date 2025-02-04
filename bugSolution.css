@@ -1,0 +1,13 @@
+The solution is to remove the unnecessary vendor prefix.  Modern browsers support the `transform` property without the `-webkit-` prefix.
+
+```css
+/* bug.css */
+.element {
+  -webkit-transform: scale(1.1);
+}
+
+/* bugSolution.css */
+.element {
+  transform: scale(1.1);
+}
+```
